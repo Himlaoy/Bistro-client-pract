@@ -11,7 +11,7 @@ const Contact = () => {
                 heading={'FROM OUR MENU'}
             >
             </SectionTitle>
-            <div className='flex gap-4 justify-center items-center'>
+            <div className='md:flex gap-4 justify-center items-center bg-slate-500 bg-opacity-40'>
                 <div>
                     <img className='rounded' src={feature} alt="" />
                 </div>
@@ -19,9 +19,12 @@ const Contact = () => {
                     <p>March 20, 2023</p>
                     <p className='uppercase'>WHERE CAN I GET SOME?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate facere, deserunt dolores maiores quod nobis quas quasi. Eaque repellat recusandae ad laudantium tempore consequatur consequuntur omnis ullam maxime tenetur.</p>
+                    <button className="btn btn-outline border border-b-4 text-center py-4">Button</button>
                 </div>
 
+
             </div>
+
 
         </div>
     );

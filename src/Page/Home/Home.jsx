@@ -6,6 +6,7 @@ import Banner from './Banner/Banner';
 import Server from './server/Server';
 import Menu from './Menu/Menu';
 import Contact from './Contact/Contact';
+import Testimonial from './Testimonial/Testimonial';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Server></Server>
             <Menu></Menu>
             <Contact></Contact>
+            <Testimonial></Testimonial>
         </div>
     );
 };

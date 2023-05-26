@@ -6,6 +6,9 @@ import NavBar from '../shared/Navbar/NavBar';
 const Main = () => {
     return (
         <div>
+            <Helmet>
+                <title>Bistro Boss | Home </title>
+            </Helmet>
             <NavBar></NavBar>
             <Outlet></Outlet>
             <Footer></Footer>
