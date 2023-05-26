@@ -5,6 +5,7 @@ import Slider from './Slider/Slider';
 import Banner from './Banner/Banner';
 import Server from './server/Server';
 import Menu from './Menu/Menu';
+import Contact from './Contact/Contact';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Banner></Banner>
             <Server></Server>
             <Menu></Menu>
+            <Contact></Contact>
         </div>
     );
 };
