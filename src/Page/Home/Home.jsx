@@ -4,6 +4,7 @@ import NavBar from '../../shared/Navbar/NavBar';
 import Slider from './Slider/Slider';
 import Banner from './Banner/Banner';
 import Server from './server/Server';
+import Menu from './Menu/Menu';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Slider></Slider>
             <Banner></Banner>
             <Server></Server>
+            <Menu></Menu>
         </div>
     );
 };

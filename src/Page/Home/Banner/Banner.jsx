@@ -16,7 +16,7 @@ const Banner = () => {
     return (
         <div className='py-10'>
             <SectionTitle 
-            subheading={'---From 11am to 10pm---'}
+            subheading={'From 11am to 10pm'}
             heading={'order online'}
             ></SectionTitle>
             <Swiper
