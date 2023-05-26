@@ -6,7 +6,10 @@ import { Helmet } from 'react-helmet-async';
 import useMenu from '../../Hook/useMenu';
 import MenuCategory from '../../shared/MenuCategory/MenuCategory';
 import dessertImg from '../../assets/menu/dessert-bg.jpeg';
-import soup from '../../assets/menu/soup-bg.jpg';
+import soupImg from '../../assets/menu/soup-bg.jpg';
+import saladImg from '../../assets/menu/salad-bg.jpg';
+import pizzaImg from '../../assets/menu/pizza-bg.jpg';
+import drinksImg from '../../assets/menu/salad-bg.jpg';
 
 const OurMenu = () => {
     const [menu] = useMenu()
@@ -27,7 +30,12 @@ const OurMenu = () => {
             heading={'Todays offer'}
             >
             </SectionTitle>
+            <MenuCategory item={offered}></MenuCategory>
             <MenuCategory item={dessert} title={'dessert'} img={dessertImg}></MenuCategory>
+            <MenuCategory item={soup} title={'soup'} img={soupImg}></MenuCategory>
+            <MenuCategory item={salad} title={'salad'} img={saladImg}></MenuCategory>
+            <MenuCategory item={pizza} title={'pizza'} img={pizzaImg}></MenuCategory>
+            <MenuCategory item={drinks} title={'drinks'} img={drinksImg}></MenuCategory>
 
         </div>
     );

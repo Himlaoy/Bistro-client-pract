@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../../shared/sectionTitle/SectionTitle';
-import MenuItem from '../MenuItem/MenuItem';
 import useMenu from '../../../Hook/useMenu';
 import MenuCategory from '../../../shared/MenuCategory/MenuCategory';
 
