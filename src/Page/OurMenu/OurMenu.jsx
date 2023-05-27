@@ -30,7 +30,7 @@ const OurMenu = () => {
             heading={'Todays offer'}
             >
             </SectionTitle>
-            <MenuCategory item={offered}></MenuCategory>
+            <MenuCategory item={offered} ></MenuCategory>
             <MenuCategory item={dessert} title={'dessert'} img={dessertImg}></MenuCategory>
             <MenuCategory item={soup} title={'soup'} img={soupImg}></MenuCategory>
             <MenuCategory item={salad} title={'salad'} img={saladImg}></MenuCategory>

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const MenuCategory = ({ item, title, img }) => {
     return (
         <div className='py-10'>
-            <Cover image={img} title={title}></Cover>
+           {title && <Cover image={img} title={title}></Cover>}
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
                 {
 

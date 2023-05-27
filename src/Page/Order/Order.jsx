@@ -5,9 +5,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import useMenu from '../../Hook/useMenu';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Order = () => {
-    const categories = ['salad', 'pizza', 'soup', 'dessert', 'drinks'] 
+    const categories = ['salad', 'soup', 'pizza',  'dessert', 'drinks'] 
     const {category} = useParams()
     const initialIndex = categories.indexOf(category)
 
@@ -24,6 +25,9 @@ const Order = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Bistro Boss | Order</title>
+            </Helmet>
             <Cover image={imgShop} title={'Visit Our Shop'}></Cover>
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
