@@ -6,6 +6,7 @@ import 'react-tabs/style/react-tabs.css';
 import useMenu from '../../Hook/useMenu';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import FoodCard from '../../shared/FoodCard/FoodCard';
 
 const Order = () => {
     const categories = ['salad', 'soup', 'pizza',  'dessert', 'drinks'] 
@@ -37,7 +38,13 @@ const Order = () => {
                     <Tab>Dessert</Tab>
                     <Tab>Drinks</Tab>
                 </TabList>
-                <TabPanel></TabPanel>
+                <TabPanel>
+                    <div className='grid grid-cols-1  lg:grid-cols-3 gap-10'>
+                        {
+                            salad.map(item=> <FoodCard key={item._id} item={item}></FoodCard>)
+                        }
+                    </div>
+                </TabPanel>
                 <TabPanel></TabPanel>
                 <TabPanel></TabPanel>
                 <TabPanel></TabPanel>
