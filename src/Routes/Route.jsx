@@ -14,12 +14,15 @@ const router = createBrowserRouter([
                 element:<Home></Home>,
             },
             {
-                path:'ourMenu',
+                path:'/ourMenu',
                 element:<OurMenu></OurMenu>
             },
             {
                 path:'/order/:category',
                 element:<Order></Order>
+            },
+            {
+                path:''
             }
         ]
     }
