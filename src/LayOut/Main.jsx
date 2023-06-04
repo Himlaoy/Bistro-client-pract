@@ -1,18 +1,23 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Footer from '../shared/Footer/Footer';
 import NavBar from '../shared/Navbar/NavBar';
 import { Helmet } from 'react-helmet-async';
 
 const Main = () => {
+
+
+    const location = useLocation()
+    const noHeaderFooter = location.pathname.includes('login') 
+
     return (
         <div>
             <Helmet>
                 <title>Bistro Boss | Home </title>
             </Helmet>
-            <NavBar></NavBar>
+            {noHeaderFooter ||  <NavBar></NavBar>}
             <Outlet></Outlet>
-            <Footer></Footer>
+            {noHeaderFooter ||  <Footer></Footer>}
         </div>
     );
 };

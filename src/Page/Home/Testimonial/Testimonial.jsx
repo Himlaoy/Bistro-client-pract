@@ -32,7 +32,7 @@ const Testimonial = () => {
                 heading={'Testimonial'}
             ></SectionTitle>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                
+
                 {
                     reviews.map(review => <SwiperSlide key={review._id}>
                         <div className="px-20 flex flex-col items-center py-6">
